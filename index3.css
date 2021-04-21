@@ -4,23 +4,16 @@
     margin-left: 20%;
     margin-right: auto;
 }
-
-.main-container{
-    position:absolute;
-    margin-top: 10vh;
-    width: 60%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image:linear-gradient(to bottom, rgba(181, 200, 219, 0.9), rgba(158, 162, 167, 0.9)),url(./page1.PNG);
+.page1-content{
+    filter: blur(6px);
 }
+
 .card-box{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-    width: 25%;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    background-color: white;
+    width: 22%;
     height: 70px;
     text-align: center;
     border: 1px solid red;
@@ -48,22 +41,27 @@
     background-color: red;
     color: white;
 }
+.icon1{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 12%;
+    right: 30%;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    font-size: 35px;
+}
 /*Mobile view **/
 @media screen and (min-width:320px) and (max-width:480px){
-    .main-container{
-        width: 70%;
-        margin-right: auto;
-        margin-top: 10vh;
-        justify-content: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-image:linear-gradient(to bottom, rgba(198, 212, 226, 0.5), rgba(230, 235, 240, 0.5)),url(./page1.PNG);
-        
-    }
+    
     .card-box{
-        width: 40%;
-        margin-bottom: 5%;
-        margin-top: 10%;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        width: 60%;
         text-align: center;
         height: 120px;
         border: 1px solid red;
@@ -89,5 +87,211 @@
         border-radius: 20px;
         background-color: red;
         color: white;
+    }
+    .icon1{
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        bottom: 7%;
+        right: 10%;
+        background-color: orange;
+        border-radius: 50%;
+        color: white;
+        font-size: 35px;
+}
+}
+/*** Page1 HTML**/
+.todo-container{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+}
+.heading-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.card-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-body{
+    border: 1px solid red;
+    border-radius: 5px;
+    height: 250px;
+    width: 30%;
+    box-shadow: 14px 14px 20px -2px lightgrey;
+    text-align: center;
+}
+.add-list{
+    display: flex;
+    flex-direction: row;
+}
+.heading1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+.heading2{
+    background-color:red;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: whitesmoke;
+    margin-right: 10px;
+    align-self: center;
+}
+.heading3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;   
+    align-self: flex-end; 
+    font-weight: 300;
+    padding: 5 px;
+}
+.heading4{
+    margin-left: 35px;
+}
+
+.col_heading1{
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.task-status{
+    color: red;
+    font-size: 20px;
+    text-decoration-line: line-through;
+    font-weight: 400;
+    text-align: center;
+}
+.lower-content{
+    display: flex;
+    padding-left: 15px;
+}
+.box{
+    border:0.5px solid black;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    
+}
+.task-status1{
+    font-size: 15px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:normal;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .todo-container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heading-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .line{
+        display: none;
+    }
+    .card-container{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card-body{
+        border: 1px solid rgba(255, 0, 0, 0.295);
+        border-radius: 5px;
+        height: 50px;
+        width: 270px;
+        box-shadow: 14px 14px 20px -2px lightgrey;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .add-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .heading1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+    }
+    .heading2{
+        background-color:red;
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+        font-weight: bold;
+        background-color:red;
+        font-size: 30px;
+        justify-self: flex-end;
+        border-radius: 50%;
+        color: whitesmoke;
+    }
+    .heading3{
+        display: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;   
+        align-self: flex-end; 
+        font-weight: 300;
+        padding: 5px;
+    }
+    /* .heading4{
+        margin-left: 35px;
+    } */
+    
+    .col_heading1{
+        color: grey;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .task-status{
+        display: none;
+        color: red;
+        font-size: 20px;
+        text-decoration-line: line-through;
+        font-weight: 400;
+        text-align: center;
+    }
+    .lower-content{
+        display: flex;
+        padding-left: 15px;
+    }
+    .box{
+        display: none;
+        border:0.5px solid black;
+        border-radius: 2px;
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        
+    }
+    .task-status1{
+        display: none;
+        font-size: 15px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:normal;
     }
 }

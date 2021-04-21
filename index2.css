@@ -1,3 +1,4 @@
+
 .grid-container{
     width: 40%;
     justify-content: center;
@@ -61,19 +62,18 @@ h1::after {
 .col-heading1{
     color: red;
 }
-.heading2{
+.add-sign{
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
     background-color:red;
     width: 20px;
     height: 20px;
-    margin-right: 5%;
     font-size: 15px;
     text-align: center;
     border-radius: 50%;
     text-align: center;
     color: whitesmoke;
-}
-.heading4{
-    margin-left: 75px;
 }
 .lower-content{
     display: flex;
@@ -98,12 +98,35 @@ h1::after {
     text-decoration-line: line-through;
     font-weight: bold;
 }
-.btn-text1{
-  position:absolute;
-  display: flex;
-  top: 90%;
-  left: 85%;
-} 
+.heading2{
+    bottom: 5px;
+    right: 2px;
+    background-color:red;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 50%;
+    text-align: center;
+    color: whitesmoke;
+}
+.heading4{
+    margin-left: 75px;
+}
+.icon1{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 12%;
+    right: 30%;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    font-size: 35px;
+}
 
 /*Mobile view **/
 @media screen and (min-width:320px) and (max-width:480px){
@@ -134,6 +157,7 @@ h1::after {
         border: 1px solid red;
         border-radius: 5px;
         width:85%;
+        height: 250px;
         box-shadow: 14px 14px 20px -2px lightgrey;
         justify-content: center;
     }
@@ -168,9 +192,7 @@ h1::after {
     width: 1.5rem;
     transform: translateY(-0.5rem);
 }
-.heading2{
-    display: none;
-}
+
 .heading3{
     display: none;
 }
@@ -200,10 +222,44 @@ h1::after {
         text-decoration-line: line-through;
         font-weight: bold;
     }
-    .btn-text1{
-      position:absolute;
-      display: flex;
-      top: 90%;
-      left: 85%;
+    .heading2{
+        position: absolute;
+        bottom: 5px;
+        right: 2px;
+        background-color:red;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 50%;
+        text-align: center;
+        color: whitesmoke;
+        display: none;
     }
+    .add-sign{
+        position: absolute;
+        bottom: 5px;
+        right: 2px;
+        background-color:red;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 50%;
+        text-align: center;
+        color: whitesmoke;
+    }
+    .icon1{
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        bottom: 3%;
+        right: 5%;
+        background-color: orange;
+        border-radius: 50%;
+        color: white;
+        font-size: 35px;
+}
 }
