@@ -109,7 +109,7 @@
     }
     .heading-container{
         display: flex;
-        width: 100%;
+        width: 80%;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
@@ -145,13 +145,13 @@
         font-size: 35px;
     }
     .heading2{
+        position: absolute;
         background-color:red;
         width: 30px;
         height: 30px;
-        margin-right: 30px;
+        right: 12%;
         font-weight: bold;
         background-color:red;
-        text-align: center;
         font-size: 30px;
         justify-self: flex-end;
         border-radius: 50%;

@@ -162,11 +162,10 @@ h1::after {
         justify-content: center;
     }
   .heading-arrow{
-      display: inline;
     background-color:red;
     width: 25px;
     height: 25px;
-    margin-top: 15%;
+    margin-top: 13%;
     font-size: 22px;
     border-radius: 50%;
     text-align: center;
